@@ -1,13 +1,112 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Lato&family=Ubuntu:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Heebo', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+:root {
+    --main-color: #001524;
+    --secondary-color: #15616D;
+    --accent-color: #FF7D00;
+    --off-white: #fffff2
+}
+
+/* Login */
+
+#login-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-main header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-color);
+    color: var(--off-white);
+}
+
+#login-main header h1 {
+    padding: 2.5%;
+    font-size: 3rem;
+}
+
+#login-section {
+    margin: 2.5%;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+#login-tagline {
+    width: 100%;
+    padding: 5%;
+}
+
+#login-tagline {
+    font-size: 2rem;
+}
+
+#login-form-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 5%
+}
+
+#login-form-div form {
+    margin: 5%;
+    padding: 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-style: solid;
+    border-bottom-color: var(--accent-color);
+}
+
+.login-orange-text {
+    color: var(--accent-color);
+}
+
+.login-title {
+    margin: 10%;
+    font-size: 1.8rem;
+}
+
+.login-username{
+    margin: 2.5%;
+    font-size: 1.3rem;
+}
+
+.login-password {
+    margin: 2.5%;
+    font-size: 1.3rem;
+}
+
+.login-input {
+    margin: 2.5%;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2%;
+}
+
+.login-button {
+  margin: 5%;
+  background-color: var(--secondary-color); /* Green */
+  border: none;
+  color: white;
+  padding: 2% 3%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.login-button:hover {
+    cursor: pointer;
 }

@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
     font-family: 'Heebo', sans-serif;
+    /* height: 100%; */
+    width: 100%;
+
 }
 
 
@@ -22,13 +25,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
+    
 }
 
 #login-main header {
-    width: 100%;
+    /* width: 100vw; */
     display: flex;
     justify-content: center;
+    align-self: center;
     text-align: center;
     background-color: var(--main-color);
     color: var(--off-white);
@@ -48,7 +53,8 @@
 
 #login-tagline {
     width: 100%;
-    padding: 5%;
+    max-height: 20vh;
+    padding: 2%;
     text-align: center;
 }
 
@@ -57,15 +63,18 @@
 }
 
 #login-form-div {
-    width: 100%;
+    /* width: 100%; */
+    max-width: 75%;
     display: flex;
+    align-self: center;
     justify-content: space-around;
-    margin: 5%
+    margin: 2%
 }
 
 #login-form-div form {
-    margin: 5%;
-    padding: 2.5%;
+    max-height: 50vh;
+    margin: 1%;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,16 +92,17 @@
 }
 
 .login-username{
-    margin: 2.5%;
+    margin: 2%;
     font-size: 1.3rem;
 }
 
 .login-password {
-    margin: 2.5%;
+    margin: 2%;
     font-size: 1.3rem;
 }
 
 .login-input {
+    width: 90%;
     margin: 2.5%;
     font-size: 1.3rem;
     text-align: center;
@@ -113,4 +123,10 @@
 
 .login-button:hover {
     cursor: pointer;
+}
+
+@media (max-width: 950px) {
+    #login-form-div {
+        flex-direction: column;
+    }
 }

@@ -17,16 +17,19 @@
 
 /* Login */
 
+
 #login-main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 #login-main header {
     width: 100%;
     display: flex;
     justify-content: center;
+    text-align: center;
     background-color: var(--main-color);
     color: var(--off-white);
 }
@@ -46,6 +49,7 @@
 #login-tagline {
     width: 100%;
     padding: 5%;
+    text-align: center;
 }
 
 #login-tagline {

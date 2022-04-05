@@ -113,7 +113,7 @@
   margin: 5%;
   background-color: var(--secondary-color); /* Green */
   border: none;
-  color: white;
+  color: var(--off-white);
   padding: 2% 3%;
   text-align: center;
   text-decoration: none;
@@ -129,4 +129,92 @@
     #login-form-div {
         flex-direction: column;
     }
+}
+
+
+
+/* Homepage */
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border-right-style: solid;
+}
+
+#home-header {
+    background-color: var(--main-color);
+    color: var(--off-white);
+    padding: 3% 0%;
+    text-align: center;
+}
+
+#home-header h1 {
+    font-size: 2rem;
+}
+
+#userlist {
+    display: flex;
+    flex-direction: column;
+}
+
+#message-board {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 0px 0px 0px #888888;
+}
+
+#message-header {
+    display: flex;
+    background-color: var(--secondary-color);
+    color: var(--off-white);
+    padding: 3% 0% 3% 3%;
+}
+
+#message-input {
+    width: 100%;
+    display: flex;
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+#text-box {
+    /* padding: 5%; */
+    font-size: 1.3rem;
+    padding: .5%;
+    resize: none;
+}
+
+#send-btn {
+    width: 15%;
+    background-color: var(--accent-color); /* Green */
+    border: none;
+    color: var(--off-white);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.user {
+    width: 100%;
+    padding: 5% 0%;
+    border-bottom: solid;
+}
+
+.user h3 {
+    font-size: 1.8rem;
+    margin-left: 5%
+}
+
+.user h4 {
+    font-size: 1.2rem;
+    margin-left: 5%;
 }

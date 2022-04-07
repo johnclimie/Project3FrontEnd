@@ -179,11 +179,11 @@
 }
 
 #nav-logo {
-    display: flex;
-    font-weight: bolder;
+    font-size: 2rem;
     width: 10%;
     align-items: center;
     margin-right: 5%;
+    display: none;
 }
 
 #message-input {
@@ -230,5 +230,17 @@
 @media (max-width: 950px) {
     #sidebar {
         display: none;
+    }
+
+    #nav-logo {
+        display: flex;
+    }
+
+    #message-board {
+        box-shadow: none;
+    }
+
+    #send-btn {
+        width: 30%;
     }
 }

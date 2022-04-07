@@ -218,3 +218,9 @@
     font-size: 1.2rem;
     margin-left: 5%;
 }
+
+@media (max-width: 950px) {
+    #sidebar {
+        display: none;
+    }
+}

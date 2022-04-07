@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
     return (
@@ -26,6 +28,9 @@ const Home = () => {
 
             <div id="message-board">
                 <header id="message-header">
+                    <span id="nav-logo">
+                        <FontAwesomeIcon icon={ faBars } />
+                    </span>
                     <h1>You are now talking to johnclimie</h1>
                 </header>
 

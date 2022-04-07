@@ -178,6 +178,14 @@
     padding: 3% 0% 3% 3%;
 }
 
+#nav-logo {
+    display: flex;
+    font-weight: bolder;
+    width: 10%;
+    align-items: center;
+    margin-right: 5%;
+}
+
 #message-input {
     width: 100%;
     display: flex;

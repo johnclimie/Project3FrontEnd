@@ -2,12 +2,17 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-import Userlist from './Userlist';
+import Userlist from '../components/Userlist';
 
 const Home = () => {
 
     const [showMenu, setShowMenu] = useState(false);
 
+    let navMenu
+
+    if(showMenu) {
+        navMenu = <div><Userlist /></div>
+    }    
     return (
         <div id='container'>
             {/* <div id='sidebar'>
@@ -30,13 +35,16 @@ const Home = () => {
                     </div>
                 </div>
             </div> */}
+            <div id='sidebar'>
+                <Userlist />
+            </div>
 
-            <Userlist />
+            {navMenu}
 
             <div id="message-board">
                 <header id="message-header">
                     <span id="nav-logo">
-                        <FontAwesomeIcon icon={ faBars } onClick={() => setShowMenu(true)} />
+                        <FontAwesomeIcon icon={ faBars } onClick={() => setShowMenu(!showMenu)} />
                     </span>
                     <h1>You are now talking to johnclimie</h1>
                 </header>

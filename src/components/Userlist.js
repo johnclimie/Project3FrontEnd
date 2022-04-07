@@ -2,7 +2,7 @@ import React from 'react';
 
 const Userlist = () => {
     return (
-        <div id='sidebar'>
+            <div>
                 <div id='home-header'>
                     <h1>DevsHelp</h1>
                 </div>

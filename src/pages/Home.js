@@ -39,7 +39,10 @@ const Home = () => {
                 <Userlist />
             </div>
 
+
             {navMenu}
+
+            
 
             <div id="message-board">
                 <header id="message-header">
